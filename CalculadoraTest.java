@@ -113,9 +113,9 @@ public class CalculadoraTest {
 	@Test
 	public void testDividirInt() {
 		Calculadora calc3 = new Calculadora();
-		double div= calc3.dividir("5");
+		double div= calc3.dividir("1;2");
 		int divide = (int) div;
-		int a = 2;
+		int a = 5;
 		if (divide < 0) {
 			a *= -1;
 		}
@@ -123,6 +123,43 @@ public class CalculadoraTest {
 		
 		System.out.println(divide);
 	}
+	@Test
+	public void testePercentualDoubleNeg() {
+		Calculadora calc4 = new Calculadora();
+	
+		double produto = calc4.percentualNeg("10");
+		assertEquals(216,produto,0);
+		
+		System.out.println(produto);
+	}
+	@Test
+	public void testePercentualDoublePos() {
+		Calculadora calc4 = new Calculadora();
+	
+		double produto = calc4.percentualPos("10");
+		assertEquals(264,produto,0);
+		
+		System.out.println(produto);
+	}
+	@Test
+	public void testeExponencialDouble() {
+		Calculadora calc5 = new Calculadora();
+	
+		double expo = calc5.exponenciacao("2");
+		assertEquals(9,expo,0);
+		
+		System.out.println(expo);
+	}
+	@Test
+	public void testeRaizDouble() {
+		Calculadora calc6 = new Calculadora();
+	
+		double raiz = calc6.raiz("25");
+		assertEquals(5,raiz,0);
+		
+		System.out.println(raiz);
+	}
+	
 	
 
 }
