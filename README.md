@@ -1,4 +1,4 @@
 # Calculadora-jar
-Versão 2 do trabalho calculadora de 5TAV (subtração, multiplicação, soma e divisão)
+Versão 3 do trabalho calculadora de 5TAV (subtração, multiplicação, soma, divisão, exponenciação, raiz e percentual)
 Teste com Junit 4
-Date: 27-09
+Date: 05-10.
