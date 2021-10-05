@@ -36,6 +36,55 @@ public class Calculadora {
 			
 	    return div;
 	}
+	
+	public double percentualNeg(String expressao) {
+	    double produto = 240;
+	    double aux = produto;
+	    double total = 0;
+	    
+	   
+	    for (String valorDividir : expressao.split("\\;"))
+		    produto /= Integer.valueOf(valorDividir);
+	    	total = aux - produto;
+				
+	    return total;
+	    	
+	}
+	public double percentualPos(String expressao) {
+	    double produto = 240;
+	    double aux = produto;
+	    double total = 0;
+	    
+	   String sinal = "+";
+	    for (String valorDividir : expressao.split("\\;"))
+	    	
+		    if (sinal == "+") {
+	    	produto /= Integer.valueOf(valorDividir);
+	    	total = aux + produto;
+		    }
+				
+	    return total;
+	    	
+	}
+	public double exponenciacao (String expressao) {
+	    double exp = 3;
+	    double aux = 0;
+	    for (String valorExp : expressao.split("\\;"))
+	    	aux = Double.valueOf(valorExp);
+	    	exp = Math.pow(exp, aux);
+	    	
+			
+	    return exp;
+	}
+	public double raiz (String expressao) {
+	    double raizq = 0;
+	    double aux = 0;
+	    for (String valorRaiz : expressao.split("\\;"))
+	    	aux = Double.valueOf(valorRaiz);
+	        raizq = Math.sqrt(aux);    	
+			
+	    return raizq;
+	}
 		
 
 }
